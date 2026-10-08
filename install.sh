@@ -191,7 +191,9 @@ PY
     tar -xzf "$TEMP/source.tar.gz" --strip-components=1 -C "$RELEASE"
   fi
   NODE_BIN=
-  if command -v node >/dev/null && node -e 'let [a,b]=process.versions.node.split(".").map(Number); process.exit(a>22 || (a===22&&b>=12) || (a===20&&b>=19) ? 0 : 1)'; then
+  if [[ -x "$PREFIX/runtime/node/bin/node" ]] && "$PREFIX/runtime/node/bin/node" -e 'let [a,b]=process.versions.node.split(".").map(Number); process.exit(a>22 || (a===22&&b>=12) || (a===20&&b>=19) ? 0 : 1)'; then
+    NODE_BIN="$PREFIX/runtime/node/bin/node"
+  elif command -v node >/dev/null && node -e 'let [a,b]=process.versions.node.split(".").map(Number); process.exit(a>22 || (a===22&&b>=12) || (a===20&&b>=19) ? 0 : 1)'; then
     NODE_BIN=$(command -v node)
   else
     case "$(uname -m)" in x86_64) ARCH=x64;; aarch64|arm64) ARCH=arm64;; *) echo 'Node 自动安装只支持 x86_64 / arm64。' >&2; exit 1;; esac

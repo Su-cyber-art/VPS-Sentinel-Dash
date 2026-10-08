@@ -47,9 +47,18 @@ def wait_for(fn, seconds=60):
 
 def main():
     assert os.geteuid() == 0 and sys.platform == 'linux'
-    initial, _ = install(['--role','panel','--source',str(ROOT),'--prefix',str(PREFIX),
+    # Deliberately reject any preinstalled Node to exercise the managed download path.
+    old_node = Path(tempfile.mkdtemp(prefix='sentinel-old-node-'))
+    (old_node/'node').write_text('#!/bin/sh\nexit 1\n')
+    (old_node/'node').chmod(0o755)
+    os.environ['PATH'] = str(old_node) + ':' + os.environ['PATH']
+    test_ref = os.environ.get('SENTINEL_TEST_REF')
+    source_args = ['--ref',test_ref] if test_ref else ['--source',str(ROOT)]
+    initial, _ = install(['--role','panel',*source_args,'--prefix',str(PREFIX),
                           '--bind','127.0.0.1','--port','19080','--api-port','19081'], interactive=True, password=True)
     print('PASS: interactive installation printed a generated password after both services became healthy', flush=True)
+    assert (PREFIX/'runtime/node/bin/node').exists()
+    print('PASS: installer downloaded Node, verified SHA-256, and built the frontend from the selected source revision', flush=True)
     with httpx.Client(base_url=URL, trust_env=False, timeout=30) as client:
         def request(method, path, data=None, expected=200):
             response = client.request(method, path, json=data if method != 'GET' else None)
