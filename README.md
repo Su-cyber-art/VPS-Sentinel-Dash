@@ -7,15 +7,10 @@ Vue 3 + TypeScript 前端、FastAPI 后端与主动连接的 Agent。通过网�
 在 Debian 12+ / Ubuntu 22.04+ 的 systemd 服务器上运行：
 
 ```bash
-sudo bash <(curl -fsSL https://raw.githubusercontent.com/Su-cyber-art/VPS-Sentinel-Dash/main/install.sh)
+curl -fsSL https://raw.githubusercontent.com/Su-cyber-art/VPS-Sentinel-Dash/main/install.sh -o sentinel-install.sh && sudo bash sentinel-install.sh
 ```
 
-如果 sudo 无法读取进程替换文件，使用保存后运行的等效命令：
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/Su-cyber-art/VPS-Sentinel-Dash/main/install.sh -o sentinel-install.sh
-sudo bash sentinel-install.sh
-```
+已使用 root 登录时可省略 `sudo`。安装器从终端读取交互输入，安装文件也会保留供以后升级或重置密码。
 
 菜单提供主控安装、Agent 安装、升级、密码重置和卸载。主控安装时交互选择监听地址、面板端口、后端内部端口、管理员用户名，以及可选外部访问地址；自动安装 Python、Node.js 和运行依赖，构建 Vue 前端并配置 systemd。
 
