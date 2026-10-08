@@ -1,0 +1,75 @@
+name: Verify frontend, API and native installation
+on:
+  push:
+    branches: [main, 'refactor/**']
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: verify-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  api:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.10', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: pip install -r backend/requirements-test.lock
+      - run: python -m pytest -q backend/tests
+      - run: bash -n install.sh core/runner.sh core/mod_google.sh core/mod_trust.sh core/mod_quality.sh
+  browser:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: pip install -r backend/requirements-test.lock
+      - run: npm ci && npm run build
+        working-directory: frontend
+      - run: npx playwright install --with-deps chromium
+        working-directory: frontend
+      - run: npm run test:e2e
+        working-directory: frontend
+        env:
+          SENTINEL_TEST_PYTHON: python
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-validation
+          path: |
+            frontend/test-results/
+            frontend/playwright-report/
+          retention-days: 14
+  native-install:
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-22.04, ubuntu-24.04]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install test harness
+        run: |
+          python3 -m venv /tmp/sentinel-harness
+          /tmp/sentinel-harness/bin/pip install httpx==0.28.1 pexpect==4.9.0
+      - name: Exercise interactive installer and original sentinel modules
+        run: sudo env "PATH=$PATH" /tmp/sentinel-harness/bin/python tests/native_install.py
+      - name: Service diagnostics on failure
+        if: failure()
+        run: sudo journalctl -u vps-sentinel-api -u vps-sentinel-web -u vps-sentinel-agent --no-pager -n 120

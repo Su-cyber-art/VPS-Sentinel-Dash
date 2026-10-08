@@ -3,5 +3,11 @@ runtime
 work
 outputs
 **/__pycache__
+**/.venv
+**/node_modules
+**/dist
+**/test-results
+**/playwright-report
 .env
 *.sqlite3*
+.DS_Store

@@ -10,3 +10,14 @@ runtime/
 __pycache__/
 *.pyc
 *.sqlite3*
+
+# Split frontend/backend development artifacts
+.venv/
+node_modules/
+dist/
+.pytest_cache/
+.coverage
+playwright-report/
+test-results/
+*.tsbuildinfo
+.DS_Store

@@ -5,7 +5,7 @@
 # 核心功能: 主控调度枢纽，管理防并发锁与 Feature Flag 概率轮盘
 # ==========================================================
 
-INSTALL_DIR="/opt/ip_sentinel"
+INSTALL_DIR="${SENTINEL_ROOT:-/opt/ip_sentinel}"
 CONFIG_FILE="${INSTALL_DIR}/config.conf"
 
 # --- [基础环境构建] ---
@@ -50,7 +50,7 @@ export CONFIG_FILE INSTALL_DIR
 # [防线 2] 行为学隐蔽 (Cron Jitter)
 # 彻底消除僵尸网络同频定时唤醒特征，自然打散全球并发请求
 # ==========================================================
-if [ -t 1 ]; then
+if [ -t 1 ] || [ "${SENTINEL_WEB_MODE:-0}" = "1" ]; then
     log "SYSTEM" "INFO " "💻 检测到人工终端干预，跳过静默休眠，立即执行任务！"
 else
     JITTER_TIME=$((RANDOM % 180))

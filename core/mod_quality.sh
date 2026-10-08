@@ -99,7 +99,7 @@ fi
 # ==========================================================
 
 # 确保连通性后执行探测，放宽超时阈值以给予第三方 API 充足响应时间
-RAW_OUTPUT=$(timeout 300 bash "$PROBE_SCRIPT" "${FINAL_ARGS[@]}" 2>/dev/null)
+RAW_OUTPUT=$(timeout --foreground 300 bash "$PROBE_SCRIPT" "${FINAL_ARGS[@]}" 2>/dev/null)
 JSON_DATA="{${RAW_OUTPUT#*\{}"
 ESC=$(printf '\033')
 JSON_DATA=$(printf "%s" "$JSON_DATA" | sed -e "s/${ESC}\[[0-9;]*[a-zA-Z]//g" -e "s/${ESC}[0-9;]*[a-zA-Z]//g" -e "s/x1b\\[[0-9;]*[a-zA-Z]//g" -e "s/x1b[0-9;]*[a-zA-Z]//g")

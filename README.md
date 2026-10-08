@@ -1,72 +1,117 @@
-# VPS-Sentinel-Dash · 主控 + Agent 网页面板
+# VPS-Sentinel-Dash
 
-基于 [hotyue/IP-Sentinel](https://github.com/hotyue/IP-Sentinel) 的网页管理版本。网页是管理入口，Telegram 是可选通知通道。
+Vue 3 + TypeScript 前端、FastAPI 后端与主动连接的 Agent。通过网页管理 VPS、执行哨兵操作并追踪结果。基于 [hotyue/IP-Sentinel](https://github.com/hotyue/IP-Sentinel)，采用 AGPL-3.0。
 
-## 已实现
+## 一键安装
 
-- 中文响应式面板：运行概览、节点管理、任务记录、事件日志、控制台设置。
-- Agent 主动上报心跳并领取任务；节点无需开放入站端口。
-- 一次性接入令牌、每节点独立凭证、节点移除即撤销凭证。
-- 系统快照、网络可达性和地区信号检测、日志回传。
-- 原版 Google / Trust 实验模块与 IPQuality 检测的适配，结果直接进入网页。
-- 节点策略、分组与地区标签、定时任务、持久化任务队列及结果。
-- 管理员登录、CSRF 校验、密码更换、操作事件记录。
-- Telegram 可选发送节点离线、恢复和任务失败通知。
+在 Debian 12+ / Ubuntu 22.04+ 的 systemd 服务器上运行：
 
-## 本地启动
+```bash
+sudo bash <(curl -fsSL https://raw.githubusercontent.com/Su-cyber-art/VPS-Sentinel-Dash/main/install.sh)
+```
 
-需要 Python 3.9+。没有 pip 或 npm 依赖，也无需前端构建。
+如果 sudo 无法读取进程替换文件，使用保存后运行的等效命令：
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Su-cyber-art/VPS-Sentinel-Dash/main/install.sh -o sentinel-install.sh
+sudo bash sentinel-install.sh
+```
+
+菜单提供主控安装、Agent 安装、升级、密码重置和卸载。主控安装时交互选择监听地址、面板端口、后端内部端口、管理员用户名，以及可选外部访问地址；自动安装 Python、Node.js 和运行依赖，构建 Vue 前端并配置 systemd。
+
+**安装成功后会打印面板地址、管理员用户名和随机初始密码。首次登录必须修改初始密码，后端在改密前禁止节点与任务操作。** 初始密码不写入源码或配置文件；数据库仅保存密码摘要。升级保留已修改的密码与节点身份。
+
+默认使用 **HTTP 8080**，后端只监听本机 `18087`。不安装或改动 Nginx、Caddy、证书和防火墙；是否使用反向代理或 HTTPS 由用户配置。Agent 同样支持 HTTP 和 HTTPS。
+
+## 接入节点
+
+1. 登录网页并完成首次改密。
+2. 点击「接入节点」，填写名称并生成一次性令牌。
+3. 在节点执行页面给出的安装命令，粘贴令牌。
+4. 安装程序自动准备依赖、哨兵模块和 Agent 服务；完成注册及首次心跳后显示成功。
+
+也可以直接运行统一安装器，选择「安装 Agent 节点」。Agent 只需主动访问主控，无需开放节点入站端口。令牌 15 分钟有效、只能使用一次；注册成功后换成独立节点凭证。
+
+## 网页面板功能
+
+- 运行概览：节点在线状态、系统指标、任务活动和操作事件。
+- 节点管理：搜索、分组与地区标签、单节点或批量任务、模块开关、定时策略。
+- 哨兵操作：系统快照、网络检测、IP 质量检测、哨兵巡逻、Google 区域访问、Trust 本地站点访问、日志读取、哨兵数据同步。
+- 任务记录：队列状态、结构化结果、输出日志、运行中任务取消、失败原因。
+- 安全与恢复：初次强制改密、会话撤销、CSRF 校验、节点凭证撤销、结果断线重传。
+- Telegram：可选的离线、恢复和失败通知；管理操作统一在网页完成。
+
+Google / Trust 是上游实验性访问模块，默认关闭。HTTP 成功不代表信誉或定位改善。网络检测展示 HTTP 可达性和页面地区信号，不等同于完整流媒体解锁。IPQuality 沿用上游第三方检测脚本及数据源。
+
+## 项目结构
+
+```text
+frontend/                 Vue 3 + TypeScript + Vue Router + Vite 独立前端
+  src/                    页面、组件、API 客户端与状态
+  server.mjs              生产前端服务，提供构建资产并代理 /api、/downloads
+backend/                  独立 FastAPI 项目与依赖锁
+  sentinel_api/           认证、节点、任务、Agent API、SQLite 存储
+  tests/                  API、首次改密、权限、调度与 Agent 测试
+agent/sentinel_agent.py   独立 Python Agent，无第三方 Python 依赖
+install.sh               交互式原生安装、升级、重置与卸载
+core/ + data/             上游哨兵模块与区域数据
+frontend/e2e/             浏览器完整流程及桌面/移动布局验证
+tests/native_install.py  Linux systemd 实机安装验收（CI 环境）
+```
+
+前端与后端拥有独立的依赖、构建和运行入口。后端只提供 API，不提供 HTML。原生部署使用两个独立进程：`vps-sentinel-web` 与 `vps-sentinel-api`；也可将前端 `dist/` 部署到自己的 Web 服务器，并单独运行后端。
+
+## 本地开发
+
+需要 Python 3.10+ 与 Node.js 20.19+ / 22.12+。推荐 Node 22。
+
+后端：
 
 ```bash
 git clone https://github.com/Su-cyber-art/VPS-Sentinel-Dash.git
-cd VPS-Sentinel-Dash
-python3 -m panel.server
+cd VPS-Sentinel-Dash/backend
+python3 -m venv .venv
+.venv/bin/pip install -r requirements.lock
+.venv/bin/python -m sentinel_api.cli bootstrap
+.venv/bin/python -m uvicorn sentinel_api.main:app --host 127.0.0.1 --port 18087
 ```
 
-打开 <http://127.0.0.1:8080>，使用终端打印的初始化密钥设置管理员密码。默认只监听本机，数据库位于 `runtime/master/`。
-
-在网页点击「接入节点」，生成令牌；在另一个终端启动本机 Agent：
+初始化命令打印随机初始密码。另开终端启动前端：
 
 ```bash
-python3 panel/agent.py \
-  --config runtime/local-agent.json \
-  --master http://127.0.0.1:8080 \
-  --enroll '<网页生成的令牌>'
+cd VPS-Sentinel-Dash/frontend
+npm ci
+npm run dev
 ```
 
-本机 Agent 在 macOS / Linux 上均可回传系统快照、网络检测与日志；原版实验模块仅在 Linux 上执行。内存指标在非 Linux 系统上显示为缺失，不会填入虚构数值。
+访问 `http://127.0.0.1:5173`，使用 `admin` 与初始密码登录，再设置新密码。Vite 会代理 API 请求至后端。API 文档位于 `/api/docs`。
 
-## VPS 部署
+## 构建和测试
 
 ```bash
-cp .env.example .env
-# 编辑 .env，将 SENTINEL_DOMAIN 改为已解析到主控服务器的域名。
-docker compose up -d --build
-docker compose logs master
+cd frontend
+npm ci
+npm run build
+
+cd ../backend
+.venv/bin/pip install -r requirements-test.lock
+.venv/bin/python -m pytest -q
 ```
 
-开放主控 80/443 端口，通过 `https://你的域名` 完成初始化。Caddy 负责 HTTPS，主控 8080 端口不映射到公网。详细步骤、迁移注意事项、备份和卸载见 [部署文档](panel/README.md)。
-
-在网页生成令牌后，根据接入窗口中的命令安装 Agent。安装时可选择原版模块；默认只安装基础 Agent，实验模块默认关闭。
-
-## 验证
+浏览器测试使用专用临时数据库、真实本机 Agent 和独立前后端进程：
 
 ```bash
-python3 -m unittest discover -s panel/tests -v
-node --check panel/static/app.js
-bash -n panel/install-agent.sh core/mod_google.sh core/mod_trust.sh core/mod_quality.sh
+cd frontend
+npx playwright install chromium
+npm run test:e2e
 ```
 
-集成测试启动真实 HTTP 主控与本机 Agent，覆盖任务往返、结果断线重传、令牌一次性使用、会话权限、节点撤销、任务领取并发、定时调度与失联处理；测试不连接第三方探测服务或 Telegram。
+GitHub Actions 运行 Python 3.10 / 3.12 API 测试、Chromium 完整流程、桌面和手机截图，以及 Ubuntu 22.04 / 24.04 上的真实交互式安装与 systemd 验收。Linux 验收会实际执行上游哨兵脚本，并用明确的 HTTP 测试夹具替代第三方站点流量。
 
-## 范围
+## 部署与来源
 
-这是可运行的 v0.1 单管理员版本。当前不包含多用户权限、SSO、主控高可用、Agent 自动升级或数据图表分析平台。提供的 Docker 与 systemd 文件需在目标 Linux 环境验证。
+端口、反代、服务命令、升级、密码恢复、备份和 v0.1 迁移见 [部署文档](deploy/README.md)。当前为单管理员、单主控版本，SQLite 持久化；不包含多租户与主控高可用。
 
-网络检测显示 HTTP 可达性和页面地区信号，不能等同于账号可用性或完整流媒体解锁。原版“养 IP”功能作为实验模块保留；请求成功不代表信誉或定位得到改善。IPQuality 模块沿用上游的数据源及脚本下载行为，应自行审核其执行内容。
+上游基线为 `hotyue/IP-Sentinel@5d3d9a1`。上游说明保留在 [README.upstream.md](README.upstream.md)，旧安装入口保存在 `legacy/`；上游数据与 Star 图表工作流改为手动触发。2026-10-09 的本次衍生修改包括独立前后端、原生安装器与哨兵模块适配。
 
-上游基线：`5d3d9a1`（2026-10-08）。保留上游 `core/`、`data/` 及原有 Telegram 管理实现，原说明见 [README.upstream.md](README.upstream.md)。本版仅对三个核心模块增加安装目录配置及网页 JSON 回传适配。
-
-上游 GitHub Actions 数据与 Star 图表工作流保留为手动触发；此仓库默认不会定时修改数据文件。
-
-许可证：AGPL-3.0，详见 [LICENSE](LICENSE)。
+许可证：[AGPL-3.0](LICENSE)。
