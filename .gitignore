@@ -1,0 +1,12 @@
+# Environment & secrets
+.env
+.env.*
+.env.d/
+*.env
+!*.env.example
+
+# Web control plane runtime and node credentials
+runtime/
+__pycache__/
+*.pyc
+*.sqlite3*

@@ -1,0 +1,50 @@
+{
+  "region_name": "UAE (Dubai)",
+  "google_module": {
+    "base_lat": 25.2048,
+    "base_lon": 55.2708,
+    "lang_params": "hl=en-AE&gl=AE",
+    "valid_url_suffix": "ae"
+  },
+  "trust_module": {
+    "white_urls": [
+      "https://news.google.com/rss/articles/CBMinAFBVV95cUxQUDR0M3djcjNIRUF5RmFQdXNadktqVXlKYkJ2Q0xkUmUteVJUWDh2MXFSZEtaQnJyTi11Y1JiRV9kUkNUWUUtTWhxeC1hY0hGcWtkUGJZVUctZjBSdnVhem1hanlPVkJlM3lJUE51amVlaXM0QThyV1hFaUxrekdNNWctSUZXMHB0Z01rMk9MQnlWVjVBRGZ0VUwzSXY?oc=5",
+      "https://news.google.com/rss/articles/CBMid0FVX3lxTFBMaW9Lc1l6c1J3cnRTV0VjSUxDd1p4MVpLUmVLM3paczM0TlAtT1JNY2hGNjExWE8zSS1paVdSLWpkNHMzMlpsVnFWcXBJM3RpUnZkVm1jUzV2by0wbVZrUVg0REtlM3owSG93eFUzb2VWSkZUTEZR?oc=5",
+      "https://www.centralbank.ae/",
+      "https://news.google.com/rss/articles/CBMigAFBVV95cUxPUmZaQl9aMVNXZGNnWGY2eFF0S2RPdzZrQ3F5ZW9KcUFhRFpaOEhxZlZMbWswXy1HUWtOQTNLRlg1NFlqb0VyYXMzUUdDcTVIc0ppXzl6bjZ4SkI5Y3N4S2VvbklmZ09NV3BZcHlvVkhuSmZtdnJJdElVMjI4OFJSdg?oc=5",
+      "https://news.google.com/rss/articles/CBMipwFBVV95cUxQb2N4R09UeWt3Ry1URi13Zmpva3d0MjQxbkthYjFYVzJwM2VXM0c5VUk5bWc3X2NKYUcxZ3FaY01JRlFYZ3ZIOGxpQmVoRlNHaEF3TkFYVTlhbzV0RzdLckhrak5PS1BQaTZFeE9wR0VHNTdrLVpVeHMtNzA5QkxJR3JBcXowMS1wRjE5S2tKM2MwMWZvNHowZk04ZjNRdGxVTDJsZUJ1Yw?oc=5",
+      "https://news.google.com/rss/articles/CBMihAFBVV95cUxPZjFPSFc3anNuT3o1ek52ckJiQ1RnbDRERmhfY2FxQXAwUVg5V01La3R5OXA0UnNvWjc5ZHczVTNpejhhS3BlenBxZEMtWml1bEtabTJ0R0ZHTkZoS2hENWljczBBdjVoRTkta1NyQjJKamE3Mnp6ME5vYmZBbzZQQlN4VEc?oc=5",
+      "https://news.google.com/rss/articles/CBMixgFBVV95cUxOU2tNSUNoRTdyQ0JaVERLMWtOaGZOU2FRZVFGQmRZZ1V5Q2RqLXlqWGU4cDJGUEUtZTNDeDBsWHJhN0MyVDFuX214UVFZempzdEk3cEZqSUNHbWM1ZnVXUmNaZnE2R0Y5WW9ueXN2TUtaS0hONXBmblJHRW00OUVnR00xdHJyXzkzVFpqZVJNQ0VleENBQkZ4eHRyWDJHcklGNkg2WUNhMVd6YzZwVUdlOUlIOGNMcmczb2FyYU50MFp3dmFvQVE?oc=5",
+      "https://news.google.com/rss/articles/CBMisgFBVV95cUxOMDJBUEV3WHRnRTl4WlNDa2lsaFNicThRU3RsOGxKRzJCV2xkd25WN3FieDRSSFZfcVZlOUJTbVBLTUotYjA5ZElTWWF6aWFacmVILUJoNFNHQkhneEdCRzJ6NGJvdUZHNjBueHRtUWlTTmtEQktwekVpRVp0d2VnZVJ3d2ViNlJWNlVGcHEyNTRYTFI0TUd1bHhMUV9iWkwzTF9sVjRMNjJuQlZsY2lNOVZR?oc=5",
+      "https://news.google.com/rss/articles/CBMihwFBVV95cUxQTEdDTHFQam5OWW41dGdVdGh6Sy1EME5ObGdvdWNYc1RIb3RsQUFPWGRlQlhHSms1NmxQQVRCbzBBOVNYXzhObjc5V1g5TmttdUN6ZDFlTTdka2FOdkc2ZlMxX29NQ1hfSFBOem5wRzlBaEhLS0dmTHhKNXFRYzBFTnh4cWRvcXM?oc=5",
+      "https://news.google.com/rss/articles/CBMilwFBVV95cUxOMHNqRmlLUW1sNFNSV2hEeEdyMDA1VnE3U3pBczdhQzEyclA2ZnVxOU82ME5NRUlkWE9KbzM0YUJ3aDBucU9wcy1wRzJ0MGRZSWY2eGxiQlZWVDNkVXJEMDZBcWZFZ2FYcmNMenY2MHJ6RVh4aVFSZGZnUVhhbVBTNk9LaS1xbGQ3N19HTGI1QXJyclZ6WC1V?oc=5",
+      "https://news.google.com/rss/articles/CBMickFVX3lxTE9WaUFiTXZVY0hlYnVQTU9qbTNVY2RvRXpEa1p3Y1lfaWJwbTdjN2g4c0pTeHNCZ2RpSi1uMnF6RFFtVjhsUV9uZ1ZFazczTENYREoySG1PRHBEUFNFOFdaU29oUG5ZeHFoZ1dpSDVGTEE0Zw?oc=5",
+      "https://news.google.com/rss/articles/CBMigAFBVV95cUxQcTF2TEYxLTZ6MmtUbkFQZ2FZVHR5WElHcHFaR0RVUjYwdmkySERwWDhfQmlvd1RjMElULUhpdzNwbVFJSmNNWFNfNVBmOVZnSUM4WmdJSWVGdnFJMERhNUFmSnJGSDV0TVUtWjNLRW9JYmRBZXFXNGl0SXFmOXRVcg?oc=5",
+      "https://www.khaleejtimes.com/",
+      "https://news.google.com/rss/articles/CBMingFBVV95cUxPMi1Mb2hmbHBGU0pscFZCNzBDVTltUEVtNmhyQU4wT0JQd0VDMkdBOWF0UHhzMVJUY0lQZkFSbVJiczQzTTVqSGxvQ0syWEZOcllsMmhXX00zQm1rNG0tc1phMExWMUx2d3l2c2U4Ump3Rnlwa3ozWTY2U1VGSkljYTVBZ3hsNG9yYTg5YVl5VVd4MU5qNW9rTmRoZTVwUdIBowFBVV95cUxPeDhCNVJuR21jaTVBa3VCajJ5WGhUdHVpTUlHZXN0OTJFb05OZUN2Z3RDdEZlWEg5YnU0aU5uM1hFd2VIWkQyWGNDblk5bU5YVWh3UXZweTNtSGNGMDdvb0lCMHdLaGN0VDRZRnpEWURjdTNqRUFPcjhZWTZEZWxDbkEtVmlvREpZRUZCZEVFVTFkck9hUnhheW1MREkxN0ZmMmI4?oc=5",
+      "https://www.thenationalnews.com/",
+      "https://news.google.com/rss/articles/CBMikAFBVV95cUxNYkNMT3hoaGNKUzQ2T1lLVVc1STdleWI4eFFnTDNuVHlLbkpsMmRZOWtYOURLVkxxNnRKZkphR1pFVlA5ZnpfOFA0RW1PcGZZRUNuUGlWRjZtaWJlSFZFTnlFNkdYaW92NF92dWdjR3lUTWUzaWk0QkNobktZM0RhR3NLNFNINjZvcl8yU0J0QTQ?oc=5",
+      "https://news.google.com/rss/articles/CBMikgJBVV95cUxNejBfaXRGSnJ1aG1wYVdaUVE4Vy1xdWFxV1MzSU9OdHpLWUtlaGJBd1ZVTVZ5ZFI0ZldocVlkdi1wbmRGR21HM0MtcUo0QjgtTGRoWG9WeGltYUVVekhTcE9tbmZHWWVaZDhxd1haRzRsNHdHTHRTWHdMLURXTm5VbnppcHdXcWdZdzVLbF9yOElNbDV0YU5MTkdBaklIZXYyTDgtMjNPcVJJMFRlMnhSNEJsWnRjaFBuSkQ5cUdNZDdLT291SkoxUkN2ZTVrN1dhR051cXR6NnZzMUJmMlRRcXFyaHlQRGE3QU5vcDRQbFV5eVNiWVJ4OUd5TVZIQVJaYXJxVEVaaHFiRkl6WkZURjdB?oc=5",
+      "https://news.google.com/rss/articles/CBMiogFBVV95cUxQYkFnUFNFSnpNWkZUYklpSEg3eTdoX3dPTmNPY0FpdTBmNzVOVVdkRi1FMWlJd3pyc3NKUEs3YVJldjJrQmttYnlIbW1QZFJWNGhNVG4zWEJfM2ZzNDZJeVFEVGpQRWNnZDRWdEFZR3ZYUWtGT0ZKanc2YzdxX3lyQWVEVEhJemMzUmhpblFPUE9EbTV6WDNMbmNHdXNpUGlaVXc?oc=5",
+      "https://u.ae/",
+      "https://news.google.com/rss/articles/CBMihAFBVV95cUxOQkdBN3lQTkJTdW4yZWNHenpWcERwUUViQl9qUUVqemJFb28yN3dEUnhMSVBoaHNKbGRaX0sxaFdMS3cyR282WmkwU21BN3FsZ3dLWGdJVnhsSnd3c1hFYVlNRVB5WFNQUHQyYWRLNGdwdmFHR2lHMkQ1c0tSX3AyUFBzcm8?oc=5",
+      "https://news.google.com/rss/articles/CBMioAFBVV95cUxQekRubGYxT2lwdTZjdmtlTDNWaERwbGM2bl91YkRXcHhqVE9pRWdqZVkxLWdFUGNpVV9NWUFWdnljaUp1a3ByZWVjSk9VY1dmYUY0a0V2THgzdFhoZHF0NklCeTZYNUxKeE83UlM2SUk4N1JReV95NkNTRHNGYUpBOThrMFYtbFA1a2pWSFBWd0hYeG1iTjB0b0Q2dDF5eEdf?oc=5",
+      "https://news.google.com/rss/articles/CBMijwFBVV95cUxObU11UTVyOElhZ1JOcUNIYWJPWDVGQUFOamhKTmNmbnlNVWNNMDFlcUN3VTFhSzRXOXdzZEZMaldVczEtdmRGMkdBQkw4d3ktR1ZzX1pMV1dlb1ROTms1RFBOMUhJS1ByODlFTVRrOS1KUUpCdjdneDdUemRwZGE5WGRqLXJBaWJzaHVoSnZkUQ?oc=5",
+      "https://gulfnews.com/",
+      "https://news.google.com/rss/articles/CBMidEFVX3lxTE0zX1MxMUJWc0QzNzZaaWtzcHBqc3ZjMXVZNFRWclVrMFYxTF9CTzRfMlpoMldZNTR6Z2RnM1FfUU1aTGRfR2hWbjYtWnlVbVlNMldBSnhqYUFHMnlnM3BOV3kyU0tpU2QwbzJPQUR0UDhudUJw0gF6QVVfeXFMTlVNc2NsOTZhajdjcTJINm0tNmxKaGpNbDFfU3ByTGdseHVWaXVnWWpGRVpodDJmV1VhX0RHZVM1WEZmVGlzVU8yWlFheWdtNVNWNkFDa0sxZXJiQnlqbHNaNGVuTG90YzdqUEJMMGlidjlwbGFFd3VQSGc?oc=5",
+      "https://news.google.com/rss/articles/CBMib0FVX3lxTE9QS0JRRm9PcFU3Ul9uOWJwOEJYUld6N1pCVk16TnlHaG9NOEFaazdFTVBDYkVHNDJrdkI2a2s5TFlYRXgtUHc0Z3N6Wmx2QmpnOWdXemYwNG4xOXNaYlR1N2V3bEpCaEpScUpHbDFfdw?oc=5",
+      "https://news.google.com/rss/articles/CBMihwFBVV95cUxOckhTM2FIRHNCT09sV3BoMUdvZXNkUFVtdEF0ZVNjT0RtMFluR3BUV00xOUVOeVQ0cC1PVEdiam4tLXVUMHJaOFZIcmc3dVJ1RWptNlZPSF9rU0RQbTlZM09rSlJtOG1ucHlLeVRCWTk1aGlLNERDQ0gtVzk3NkdSLThJR0pDX1U?oc=5",
+      "https://news.google.com/rss/articles/CBMioAFBVV95cUxOZ0pteS1hZE90cmhvMVYtLTg5WXlDZ19wXzVsYVZXZXFYWTZyWERvU1pOcnNkSXNmTTJoVW9BNVBFVm5rSW0zRHpVWjZXd245dnlnOUI5UklXN2xVcXdEeUxLR2RqRHhsMjNJejVfY0FNYmpXMXNtYm1qdE9IdmVVMTlIRzRJNHNQclhSekwwUTNMYjQzWXc1ZWQzdDlwV1FV?oc=5",
+      "https://news.google.com/rss/articles/CBMiW0FVX3lxTE56LTBfNEdSQVcwb3k0VktEZGVrQ0NkWVZVUkZMX05ZOG9tNFZxRS10c3VtMGZPS21Zai1wd0g2ajI3MUE5LVBZM3IwaVFPX2xDR19GWHFBMTNQcHM?oc=5",
+      "https://news.google.com/rss/articles/CBMitAFBVV95cUxPM2M3ZjBmVDVpR1M3eE9qYWtmRHRKNWsxT0FnNGtOdHFzVXZYS0Q0N1ZYeWo3MTl2SkVSMllDSFhZTzJVS0ZvU2FDTmlUTVVfQzJXTHRPb2lUcElLc3JWUGZCZjBfQ3Rxa3M5c0Nnc28yX25NR1BybUFtTWdEUTB3NlBpS0FjdnBvaDgtZGdxaDJHVUZrakNncUJmeVNWSlZSMW9kV3dzQnJOWHE1TG5HdmQ2T04?oc=5",
+      "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNN0JHRGFtekJRRmUxY1MxRkszQXJoMERCOVFhUmdnUmdoRHg1Q2M1MGxRb0tPSHkxM19rQTAycm01UTNEY0JKZEVIZzVWUWxyOVlfUzRpUVlIUDM4MGgybXYtVmtGR1VmUzQ4VHB4NktZY29UNlhVOThuMUpyUy04YmxUSW85RHpqSEJGeEtyRzZ0a05KM1lRRzdPTnV5U1Zkc091OFgxT00?oc=5"
+    ],
+    "static_urls": [
+      "https://www.centralbank.ae/",
+      "https://www.khaleejtimes.com/",
+      "https://www.thenationalnews.com/",
+      "https://gulfnews.com/",
+      "https://u.ae/"
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "region_name": "United Kingdom - Coventry",
+  "google_module": {
+    "base_lat": 52.4068,
+    "base_lon": -1.5197,
+    "lang_params": "hl=en&gl=GB",
+    "valid_url_suffix": "co.uk"
+  },
+  "trust_module": {
+    "white_urls": [
+      "https://www.nhs.uk/",
+      "https://news.google.com/rss/articles/CBMiXkFVX3lxTFAtbVVwTk52MkRFaEc5SDFLSThjeDJ1Sl9LY3pIb215YWpQMXdfZi13cmNyYW1IcUJUUEFqM1pkV3lsWXZ4NlRMbGdWNnl5WmJCM3lqM0hjdmxoSjYwTmc?oc=5",
+      "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPenFCTmFGREJOeThPU2ZsTTVWOXdyQ1Rua1lNUkdhWjR3SkJWNFlxS1AzVGNSSkxudGxxSXpnN25DQ1d2R2NaQWtBWmRqN2lkNWpXNUtFUkFfQ2M5SmxwREw1ck5leWlDUm5wRk03MFNCRHhRU3ZkNVFxTkpNd2UwZG5saUZneVZlZ1hIaU5rZWZrT3JkMjM3M1BKdTczTml6dE1uYVhVdExNUGlZVEdXZ25iM2JXNWRuOGpaeHBPYTdaNGRWV0tpZVQ1UkVReTBCWXJjcnZiYkNzVlZOMnhaUw?oc=5",
+      "https://news.google.com/rss/articles/CBMipgFBVV95cUxOcHhJWEkxdXlmamFubDdHNWJleEtKZXRNWkM4Y1RYN0VVTzJrRFh3ZWJHaEZkR3ExSXpqd2lJVTV3SnJEeW9SaVMydURoblJ0RV8tdEpoQzRWd1ZiQUlHRVFiSlJPenJrWmczSzFPZ3FXU1J1SnpaNlBWaXc4OXhlNC1mSnBodU8tTVJtcFlDSktvTWIxMkNueU1aNWtyVV9UcGlRdmJB?oc=5",
+      "https://news.google.com/rss/articles/CBMiXkFVX3lxTE14TGlfRlFNS3I3VHFsMDR4VVVpc0VvX20ydlJ1ZEVhLVVvSnFkV2dUU19GVS1qR1FYQ3lwaUtxc0N1ZXZMYm9RT1lpRVFrNHJ3MUpJdFFsUERLVENfTkE?oc=5",
+      "https://www.ox.ac.uk/",
+      "https://news.google.com/rss/articles/CBMiowFBVV95cUxPRVhkbGRxWVdDUEpqdHZ1anhySG9uR3ZpaGZEMU52ZU5Ga1QxTHR5MHBJUDJzMzN4N0dnQl9YNHRGNXNGMUxZTFJtbmFqckVidVI3SVZRdnp4QkVscGV4Z0dOTXJqa2d3b0dPUF9fUGI5RHVnMzlqZTdaRjc2bFJyMk8yQWJxSTh0bU50OE1DVGJTbDdVT0hLbTZNcWxzLVFJQTFz?oc=5",
+      "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPaVR2dkc0Q3V1SzJweVliR0pqNkktM09DckJ6V3Ffd1pLOWotbGdUSnhfV1ZFd0Z4UGdrYnh4RURrWUVFbU16eVFXdk51d0N4Y1lmUVdkTVpUekg5UXlaWGJOTzQ5T0p4bGhGNkpSUFVWYzJyRzY0dFNoeXoyUE1YdGVKa2VBWnBrOWEtRHlFUklzUUlYaEhuWkFWS1ltcDlJeWx4REMwaFdaQ3E4YUh5RnRvX3U5ZGlBeDlEamtYZTlhTHZaTWNIOQ?oc=5",
+      "https://news.google.com/rss/articles/CBMic0FVX3lxTE15TFd1eUpBaDNhRFdHMXFHUmRseUFXS2RndE0tRDVRZENyUkhEMXZGVlk1aFNOWndfd0RaYnpTcnFzT1ZTa0ZOelFSOXNSaVBwVGtGYWV4NlVwcE1JNUZlY0p4bGlhLUotNGxucFM3bjRJR1k?oc=5",
+      "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5wenhsTFZQaDIyYURaZ1R4Rng1VlNCSzlxbXBMX01WWXBlMTNRT0stS0N2ZU4yR2ZMWWJZSXVTYWhraTZnMml6OGF1b1BjTVRTMndVMjZGa3djT21hNWc?oc=5",
+      "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPQlp1VUxKeWpTcDNZN2Q1T0o2LVJRVTFaaWRJaFo1SUlyRjNqVVBaZjA0UktxMlkybmRWUVAwdFR4eHVlUnk3TEtHVWlvOVB3dHR3elU2a1BrY1B1QW5RLTZMUVhpU2JqbFJYV1liRGlYcjU4OW96cVg2ejRWbHVGRWIzNEU5UV9pM0JTdFJCRm9vZHdKVU5oSVpoSTVDS3dXZ3B6RmxLSjV6RWk0Z1ZWemc5ak80WkxBc2ZEeFNSTTA?oc=5",
+      "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5KVkwxMGNfQkhua0ZlaVEySzRkMnQ3R1hFTHRTWm5SeHlMY3M3aFk3TmV2dEdnWFo0eXVJWjM3WTB2RGJuUHk1ZGNINjE4a2tvYURWY0VJNkI5MjBrTGc?oc=5",
+      "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9LVHlRbERiOHhUR2NoMUxyWUZIdnpIbi1CMk9FVC01a2ltV01INmdGbHZEZUs1UjJocGVxYXRabm9rVUVXR2pjRDVPRVhIREM4QVZBS3c5dC1iQ19wVXc?oc=5",
+      "https://news.google.com/rss/articles/CBMioAFBVV95cUxPVjhlUm1zd3JBM3ZpbmpkZ29adjN2ZmVkV09VcnRXWXI3LVRMX241bkZtRGVOQWNxSTRvcWVaZkoxeHA1LVgtMHU2cXRNSG5kcjRQaHNSbzBSMno4NEV4UVpaRzJBazNBbi1vQmpFbWVCNzdKQ0FDZ2RlRUNQZmtYSVBxUEJhb0g4RFRTSXJpMFc3LWRHNU8xQllPWXJlWUlw?oc=5",
+      "https://news.google.com/rss/articles/CBMiXkFVX3lxTE94YlhEajYzUW5qRXdTalpnNWplS3IwWGZscFpBTUJ0RUpZc3ctRk1pVFhrLTVpQ1RTNEJ4WTQ2SmdwR1VNMU94NVFJOG9kQTdOWkExTFQ0MksxanlteFE?oc=5",
+      "https://www.barclays.co.uk/",
+      "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQT1ZUeTMwWVRCTUJJak1IQlIza19tUXd3TjRkOEpPQUZTOExfYl9Zdi1RRHBoYU9oMl9jWVpZaUlHZkM5QXJlRVRWRC1NeldZRmZOUFdON3BYejdzUkdOZnhRZ3o3LTJnWklYbkNoTS1KZDZqUS1YVnROSmVOb05JdWZ5dkJWNmFHU2NWa0dXNWFZcXZhQlFhYXVUNmU3VTFib1FsMG9rNjNxdVNtMVZxenZ2dGI3bzVjcEEtSWozRlZwLXpXdjdPNkJaVENERlpubXFWeDExVzRCUms0Nk9xbHBzVVdiOVcwWHZPU0QyUTVvNXJWaTJYRXNB0gH_AUFVX3lxTFBTUjJHLXlzaXhYdmxVSWhrVjAtakVoeDhPNmkyalc2VkdUdThQOTJOMDVuR1ROZS1iYS1ndVZZUmZSVmlwQUFGc0FaODd2ck94eVpLXzNYTXpLb215S2pmQ21seDJHSDE2TVhISVVEdzZyNEs5aDduWl9LY2VNV1dGSXdRNVRIaFd1R1ZWTEd1VjZhVW5RdlFlN0tLUFNzUkx1a2o0Ukhxc05mZEFuRlJBTU9uRDd0RVp1M0hvVlRvM3JUcjV2aGk1MTZzZkI5a2NZZ1NYVWJBRE1LUnN4dG51Uy1Vd1dTVzFwY3ZobkhCdUVUeE53bllHekJwQi13UQ?oc=5",
+      "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQbVZFNGdXMi1TRG9rRElvZVN2elFMQzlncW9nWFZsSXRreWRyTUdjX0lDeE9NLS1GMWxSaDVGZjYyYm1HVzN0eUdOMVVWQ2U5cVg0VTFxeWtmVGgweFZ4VlV1OVhUbUFRZnp4MWxLTnlCZmRQS05WR3JVOVZpQTQwaG9rWGN0M1Y0cWpPcFBPcUctb2ZpTzBRakxwTU4xTUJiSmI2SE91TC03cnREc0VYa1VuMFk0NlRuR0NoRWdHb1hNajQtYUIxcGZXdVdfSzJ1NGVVOGdTbVM?oc=5",
+      "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOdkZ2VWR6VHZpblhPUWVWdFZxZVpLaDA0X1NBN0JDVmIxUFBfVFdRU2NQazYtbV9NMkVGZy1JN0t2OU1TUU9JME1FQ19JdmxOWGQ2UW1MZXI3ZDhUSlEyVzFUWkJBbTVFdmFhWHVjZU0yRzdLZnFQMm1Yc1pCYVRZbXBjV0VVOVMxMWlnVF9yRk9fMHFHQzZQd0FOd1JwOHcyZ1VkaU9VelJCOFFhZjgyZXBuUkI1elJMaW96NkpmRjBNdw?oc=5",
+      "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNWHZ5dVRKVGpXazQ3aVlEdFpLSHhWREdPWUh5Q0xXZ2FBbHRxNVVSNzVaMzhYbDgtNnBVR3ZJQ3VPNEl4WVN3ZkstUXlhQ2RDWUdqMlRsRC11X190eHgyRXVvdVRMLWpTTUx2eWF3QlAzak9MaFZWbmx5S3JpcHNZQmdjZndKNjJsYWxpSzRMYVZtZi1IVjdhZWhCYzNSNFh2UDhjT0lBUUlLTExIRlZOQ1ZhUjh5aGZKcW42TjFmR1RLLUE2aV9wT2FldkxxSjZiYTE4OUY4VQ?oc=5",
+      "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNcVdtbW01ckhTS2lsNEVMS1AzY2NzYUpnSzIteFhmUTJsb0Y2Mmx3MTNNVHFFbU9UdUNScnJyNEhMVWVRM3g2SEd5S2dXenZCQi15dHdyR01kbExWTjV2MHAxc2xsVXlQUWVKM2pMYmVMV1g4c3Y2cThpTmpYVGptSmRwNURMbndRTTRESFgwZFktZG9YQkNEZmpWTjNQMEV5WGRhU2hrX21aWTJIZ2ZRVEJFeDV4MWNrQ0VoU3A3UXlyQU1NZmdFSF8zaDhmVVNRNEV5V2EtRFVhRGZFaFZFdXBnSlBFMGUxMkJEVXhSZHhSTFZm?oc=5",
+      "https://news.google.com/rss/articles/CBMihAFBVV95cUxQYUJvX0VXYkdXaFo2OHJvbFBmMGlHd0lha0FyT0trSk14ZVF0UDVYcmotQUdMek53SVVuSEdQQjYzRHQ1M3k4WmVKeUN2bUtRSXRFa3pONGdsTnZRQk8xNDhva3puSVBmZXphbGlzc0RCZDRuQjNiMTZPQWpzRzdNOUZtcF8?oc=5",
+      "https://news.google.com/rss/articles/CBMijgFBVV95cUxNem9GdGtWVm1wcm9OX3h5VUxNRlFxRzRieTBiMEZsbUxEaTFxQUNjdkdaZFl4NXZaX2I3WEFtYVBiSm5zLUVnckNBUDZBUnM5LXdEdEhhaG5TUG1sekVNNzdPZXNwMGg4U2ZPanppY3cxWDdiaEFHbm9hVmFOalRTTUwtNjlsQUFmblROZVpR?oc=5",
+      "https://www.nationalrail.co.uk/",
+      "https://news.google.com/rss/articles/CBMivAFBVV95cUxNX3lvMHlPRkg2RnlLanF3azBtVUY2cW1lMXBiMVhwZkl3bWtxTW85LVY0cnJob0IyeWU5NFFpUGNZN0ExNVRlMmU5TXFyS0tqMHg0a3VWYkdCaGdTR1FqX29ZVkdCeTVUeXN4cE1mUUZqSmxOc25VZ0FiaWNybHVRTDR0SnRRTHBzbnFBS0RhRnprVUVLMUNNcXBNOWtVTzd2dFI4UlZJeFRVTkhseVpfZTZLV3FUQUVILWNHZg?oc=5",
+      "https://www.ebay.co.uk/",
+      "https://news.google.com/rss/articles/CBMitwFBVV95cUxNLUgzRExwSGpMZGdfX3hITjNnQzdLMzFZeVREX2VhTE9rSjV2d0pWV2c2dkdoM3dPSzM0aU1uNkVhUUUyamNCOGgxeFBGTThYa29pVWZrRElwbTh5UVEwWFg4blYtMmY4R0U4c3A5RnZ3bzB3SXRFRFhuM1d4TmRCUmpsU044akU2b29GS3B6aVAxYkpsQTNxa0ZiNEZ3MzNxQi15X2Q1dUFtTXZoekFhLWViVkRyeEk?oc=5",
+      "https://news.google.com/rss/articles/CBMirAFBVV95cUxPSFd4di1xdmtTYnhYQWRKRVdMVjYtRFNHMmZHa1dobS00dnNDTmdmcUxaTTBUX0xUdF9iVlV6UkpXRzZncldSTXNuNWtYcXdzUlRXSHBibHYwUGYzUWlwSjItQ1JUckZaczBSWHd0N0w2Zm54blp0ZHNqMkd2YjFFUmN5eDVUeTkwMnZCWVVTeXZSeEJuYnJIZ3FVQTZQVGJIaWtPY3hrU3A1RTRz?oc=5",
+      "https://news.google.com/rss/articles/CBMiXkFVX3lxTFA3Sk92OXBMaHB6bl80a1Foa0pxYW80SkJ6R3dac2IzYjZPXy02Y1hWRUpmVUNNNnBjM1VUME9NNVEtYkhENXQyX0lJT0xhZVBRVTkxVlJXNWZQbmpZQmc?oc=5",
+      "https://news.google.com/rss/articles/CBMiugFBVV95cUxQMldBaFV6R09DcThjcjdETU9zQUdIbnVpcGhSMHBLejZ0enR3ZlNBZmd4a3BTT1oxZldmVVduUjZXaHFNUDNFcmVaOVNab1dOSER0eU1LWDlSRF9jUzRPRmp1QnJZNGZzMnczTGdaMklUWlBfY0NBci1sc1FLVTRiODF4UTJFLVhWVWppNVFkNE5mcnJvT3BKQWJuemJ6VF9tajZPN1BESzlsTUF4R2FfU1pZdm1nTjdBb0E?oc=5"
+    ],
+    "static_urls": [
+      "https://www.gov.uk/",
+      "https://www.amazon.co.uk/",
+      "https://www.nhs.uk/",
+      "https://www.barclays.co.uk/",
+      "https://www.nationalrail.co.uk/",
+      "https://www.postoffice.co.uk/",
+      "https://www.ebay.co.uk/",
+      "https://www.ox.ac.uk/"
+    ]
+  }
+}

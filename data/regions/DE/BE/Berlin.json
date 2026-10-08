@@ -1,0 +1,55 @@
+{
+  "region_name": "Germany - Berlin",
+  "google_module": {
+    "base_lat": 52.52,
+    "base_lon": 13.405,
+    "lang_params": "hl=de-DE&gl=DE",
+    "valid_url_suffix": "de"
+  },
+  "trust_module": {
+    "white_urls": [
+      "https://news.google.com/rss/articles/CBMisAFBVV95cUxOYjFuSm8yeGYwTTFKaUx5TkJPV2hmamowVTF2dV94YS1EVDRDZ3NJRVpGLU0zQVhxWGRCc05LQ01RZjFMOHRfbWJ1MklDcFZPbFpPSFptRy00YWgtTVBFTWdMTTRfbnJXRDhvbDZoMTVaOUdNWmlmaUxHOEE4NVFGZHpjUGRwRk9WeTJWc3dBOVphQVNXQlFYYXh3cDBFZno0bjc1ZXFYQUtqOWVnS0dCaQ?oc=5",
+      "https://www.obi.de/",
+      "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOVTVaYWFBRUVMbDJORUdob1pFbkp6Z2N1RWo1aTY2YTZ6ZUVDQVk1bDB0MDVuN1RBT2NhdUc0WHVLcDc4a2hubEpHM2F0WWM3ZkZiNWwtODVXeDEzMDU2T3JHYko2WUU0czlLbGZJc3kwTFlKQ1dMbzdST3lvODZMSVFxOGQ0cmx2aTVj?oc=5",
+      "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOYzJUazZma0MzM2s4bl9rbHhNT205MlFzQjJCbjFIbVpRUkE2XzdqeWpneHFQb1h6RUhxX0VuU2Q1NkRFV0lZN0FEX19VZzQzQy1COTdLSHFkZkhuY0tlRDJVUGgzZGRxZmhzMDV3RUJuUlpuLTFVcDB2eF9SZFAxNEY5ZXdRbk41QkU4eDZuT1NRTllDQURuQWZ3anNXR2tQdjA1WUxfeEMyZXRpVERHdnpoOXEwelFVWUljeTFCUDI?oc=5",
+      "https://news.google.com/rss/articles/CBMibkFVX3lxTE5FUzBkV3VlNWh6c0xyN1NSMUxwa0g1THpOLXZPQjYwcER0LWNYQWNxT3d4amtVR0lEVkZ3UlNQSTlJMXhVUk9SVE5LYjlTN0FsSmM1REVWaXJqeXk4b3padHA5VmEwMC1lQ0I4MmRR?oc=5",
+      "https://www.sparkasse.de/",
+      "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1Pc0xhQl9qVzE5dGR1MC1PMkNWNGwzMXl6ZVA2bkVHSjFKRFhWMTFIbnNaQ1ZoRE5LdkNGUFdxZGpQZ1g4ZktoOW9lNS15S3QxOFB4Uw?oc=5",
+      "https://news.google.com/rss/articles/CBMivwFBVV95cUxQSEFjSUR2SW9nbzQyamc5cTJPcGhVckxyR1Frb2h1WVJwMjdIc3V4b3NfaDJud19nWDRXRklWN3U3VUFGS1JmNlZuZW9OWWVhRjFNazk2Z0p4Y0N6bTYxQUtPZGY3eTBtakNtZDZGbUZSWF9qWm9NR19UbGczM0ZxRTZSUERLX1BHR2NHOTdjdXJuWjlsRWtCdElRdFRyX3JCMVhXWHdEc0ZnakZNM1hiTlplWXA2MFNhekRFbUhlZw?oc=5",
+      "https://www.amazon.de/",
+      "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOV1NEdlVsaDBvZFVFV0lMZE9fU0FhbVFlckdTVEo3WTNQelNqMVdoSnBIUzFfdlRNTm1yQzF5QTlXU3lzcDlFQ3NxZ1dPaTQ2eUgxVV9UXzRpck9QT3pYbFU1SlR6MEhMVFllVnZVVDVvbGpMS19MSTNSdE0zMHdfTTU0LWMwSEhtV014X0s4ZlRfeFZuTE15Y2d3NlhTcjRTSTJVNHN0UTZlQ1lfbWNmQ3BmSnZjLXlpSG1EUXk5STdwSUUtYmpEMXJlSi1ldGdydy13WE9lTlRyUHhtVmsycnRMYVFLWlFGTm5QZjBRS0k?oc=5",
+      "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQa0Q1b0lyR1dfdVdsbGtRYV9KdUJpMDU3eDVYOXRMWnQ2R2dTMGV1LWhSNEhLcTNOeks0YlRjZnBHejVXOEhQUXlDcU9DLXh6S1lmd014ckxyT3dmdGJnTThUWnNmVzJnWnhFcEtUai0yZ1l2dmhzc1FWdnpNTE9aNHVXU1VLMF9OdTIwcmNsLXh3ZVB4a0ptbWFZQVN6X1RNZWUzS1IwMGVMQ3VUR1Zuam9fM3hSWllIWFlVRTFsdlc0ZERQVG9FaGRhMWlHcTI0d2p3YTFwTG9USkJPUzhENDNnVEs?oc=5",
+      "https://news.google.com/rss/articles/CBMisgFBVV95cUxOazFxVS05UTlleWRWa24wSkZCWmFQcVY0ZWNnaE1GcE5ZaDhyeVZKRmwyR19wMUFMcXRRaUp2QnprRThfbGpMNXpSZTdSbnZPVUpnSlctanp4SDJTSDFXclEzQk1ZQTh5d0NSVWtzNi1xUDV5NWozendpa3B2ZVFNS2tfQk1aNlZWTjNwUkFIRGJxdFRKb1h0dHUtOXB6ZVBHbk44Tmp6b2o3eUdmT2p5TFBn?oc=5",
+      "https://news.google.com/rss/articles/CBMikwFBVV95cUxOUDZGd2daOXhpb0prR3p0b3dxN3pLVkEwSXFnc0tOcTdlVWVicjBWMTJ3VUdkNjRTWFF3ZXl1bXhPcGJCRTVKLWlzSDRaNURwZk9zYlVYRTlkRkFYYV94dWMwYjk3MHlVLTNPZ2hKdjNDSmRRMlBkakp1TlAtck1pRkM0S0J2TmJhVnhWWEF1SXNNLW8?oc=5",
+      "https://news.google.com/rss/articles/CBMirwFBVV95cUxNMDFtaTBlRk9MYkcwWTV6SFNfV1pVT25JdktZVDd6djlQR0h4ZUZZcEhUNlYyV1otNzVhYWJId1pSLVJzaFR5YURJeFFlRmE2VXQtV1VBN1VSMlJKeEpRaUs3VkYtSnBXUTZNTE4xbDFkbklrNzc5M2JqVk9relZudG5pVHpxaVA0VVdoQ1JwY01xWkVRX0pzcXR0WFJYSEZMb1dqSUFpdHpTSlRBLVpn?oc=5",
+      "https://news.google.com/rss/articles/CBMimAFBVV95cUxPQUtVRVN1dkI0VnZCTm5Wem41RVA4UERlN2RiNjdmeXdvWUZzNVA5NjNEaEZ1akNodTN1dDFHZkl4Y3hvNHFhMzBpSjZ2S3NxazdFazBYZFdnempmYlhqSkM1OVZuWTRnajU3VXExUVgwdnNIMTd5T19WSVZzUVMyYWVqVTNEQmFiTW50TU5pS044d0oyM0xNdw?oc=5",
+      "https://news.google.com/rss/articles/CBMinAFBVV95cUxOLWpwUXpiSFB3MFVKR0x2TkNSdG90Sy1aOEY5aGRkQ3Fad1VTSFptWDYwZVhUamNJZ1B3dkRLSE9VZVRvdnZFUjUxbmc3eVlVWHVnVG9KZGVaZDEyTzVNZDdiV1FTUm5DdlZhVi1vb2FlSWszWGMzU2o0ZFdNRExfdUFqLUVSQi1sZ2p0RWNzQjRrZ0lBYk9FdFRHeVQ?oc=5",
+      "https://news.google.com/rss/articles/CBMinAFBVV95cUxNbUd0SkpRM0dYYlhuT0FPWHJwU0JXaXVfdG1RTnF2cXdWb0tsOGVsQlBlVXlwNjdvV1BwVFVwWVBzU3RoYXJUbnBMR09vUHVtTlJhUWpZMGJTWTVraFhWaHVvaFFXMTAzd3BXVFAxc2hNWWhZZTM1T0RhQS1jRzc1MTZyemtGZ0VDZVBqWUt1QnRUMzhna2h1bmNhWTA?oc=5",
+      "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOYndSanlFNjBhWmQtMWNSUkxDekY4cGlrZHRLd01WeXQzVkl5QzIwZkhLSkNzTnM3MHl4dWg1bnZ3Y3lPSk9QeTJSN1U4SE9VRV92MmVYY090azc3QVVsNXhBR21ZV2o4NF9weDBfZUNFRWlLOTJLaEVlaDlYNTJSakx4cXNlLTJUWDl5UDhpZGFqMXZQUjh6NHBnYWFFLXFxYUQwZFljSDVLNXZfM19RMTVfYzNXNTRGN0RLVmhubzg?oc=5",
+      "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNNnYzbktpdEU1Rk0wTjlvRjlCdDZveG1RaF9vb3BRaTRZMk5oTDBLQl8xdlJCWmFpdDhhUzcwd2hpMndRcEJmQ3p5SFlIMHpURFMxRnNsaDZXajItNlk4LUJzWVp4cE51ckFmaURWSURSczlMT0dDV250N0QxWDc5eXZadGlvazZ2S3oxZ3ZRR3BNLVYtS2txTXBtTkY4MkVHelVZMWlYNVI?oc=5",
+      "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPRFhWR0NYLVdlbDY1YVBGSW90LUJjS3ZBOFVnX01ENllET3BJdHpRRGdPNS1YbjRkMU4wQ3pabE5rUWdwSmgyZWpRb05KbTF6bEJRNWFsQl9QQ2NFRGVZVG5BME0tamtLX19MT2ZoRkQ4VXFlR2JLNEVSSnZSdDd2TllHazlVMVlibkxzZzZJSUxBQ0hEQktYUnJhcmlaQmVpTFdoNEJpb3pCNmRGcm5HYWN3Q0dSbkd4QmhiOWtsVzkxTmJLSUItSm15UEx1UlNNSUVOVFBvbnBoOTJFOWI2VEdKd281eHRmNmc?oc=5",
+      "https://www.arbeitsagentur.de/",
+      "https://news.google.com/rss/articles/CBMitgFBVV95cUxOcVdBdDQ4OUotb2NsSGR3amF1UDBsd0xQQk9VTHJjYUdlankyaTd1OWVMb3lZQnFCRGE0aF9mVXFSNG11NDRjZUNhODR3RWxFamZBc0dKN1ItMVFPWTNwMnNuOU5uU25ieVJTVm5zWUFTVVVOVEFiZWxTZXFnYmFfb2wtejd4VFdIZFlOUFh4bjgzZnkyMlZBdzh1UUxFcGdST1d4V00tMWVxTnhQU3ZvLWtpY1BNZw?oc=5",
+      "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPaW5yQ3huaVBEVnFDUmhGemJFaVBlaG5oSmVpRGctZG1YNVlpbXVXTU9PNjhjcXJFVzRGbGxQaGJkWVk0eDB5b1Q2UEZXajR6aE1UYm9vY1p6UG44eUl3YWRyYlRwclV1YnFuRTVNSWZLTEdaRGhKM2pST3hST1NvSDhaaUtnc05xWHpkNzBVMnc3ZkFoLUtQWHN5TFE4UzhUazY1cDVsWGZzXy1paWtlR2FweERtZXkzX1JzRVVRWlM3eUljaGNLYg?oc=5",
+      "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNc0lKWGFLUDlZRUpsM0lXNU1vQTVxbTFVbkE1bjA0dUhVQlM5X1ZlalZpNjh1dXdyVTJ1TTAwRUkwRlp3N0k5YW1yVF9pTWdLYkdmTExUU09oSndjemYxU0JTNGpocmljZGRqdnBESlc2LTFIS3hUMlZOeWRXa3dlM01IWldyel8taW1sa1JrREpBMERqYVJxWFRJem8zcFVQaXdVWU9TdzdCbUVXcWRYLXZXTWJTSkJH?oc=5",
+      "https://news.google.com/rss/articles/CBMiS0FVX3lxTE0yeElIemJfUnR4Y21SNEVVdU10MWF6RkRoTHUtWHl5YnRlSV9pTkNEcDU2TVg1eGRlSm94UTF0eHdVcGlGVThfdjAxQQ?oc=5",
+      "https://www.immobilienscout24.de/",
+      "https://news.google.com/rss/articles/CBMimwFBVV95cUxNQVJORlBuWWdhNjJ2MjRBOGllQm5DR1JybzJpWE5aN2lxLW1pak5zWlZ3al9jdkVNWHJHOVZQaF9OVDZCeFZ5MlZfNXNMd19KeFhrVENuSF9XT19qRWxfRWVyRG4wMGxfek1hNXkycnQ0bDhkNlFyVHVWQlBaU3ExZF9wdFh2Y1JHRFZOaW5nVDlFdU4yZENnX09adw?oc=5",
+      "https://news.google.com/rss/articles/CBMixAFBVV95cUxQMUh0R1gtaFVpbTZUdWFWR2gxbmdDcHpfUDhaTXJLTUdvNk1Wei1uREl4SkhWODRVdDZrU3hQc1VOaWJIdXhaV3FZNzZrLXRoSmpsaWgycjRPZ05MemMyNjVyb0VkcDBGZ0h0WmRzR3E3MjRvZ3o2bFhENHZ5VHkxak4wNDUxbUl1V3kybTZ2T1FHZ3pEWXBMcmdOcVdZdExyNG9iTW1IaDh6X3V0S1FDMXRlMktNZENDV3NrTUNtcjM1enEx?oc=5",
+      "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPUGxYX1BnN2RfX2g4WEdQLVdjTjdqQ09RX0J0ZzIxLV9iN0ZkQlotXzJtbF8wVzVnWDhSeUxnTDB1RUVnUkZhaldvek9OSGRIazJsVDBrNmZCcmZsTGNNaHRBejRLelcxMXp4emtyZ3FMODlSZVV2MU9RN2E1ZzY1N1Z5dzVzbHh2ZGQzY2xUaVJ0b3hoRTZySUV6QVdvV29OQ1JqZWRMRF8?oc=5",
+      "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNNWctM1RWSFFseU1PdU9VaDl5S09OTHluMURwSGVJOEFNd21hYTU0Nmd6M0lwQVFUTEo2YTJ3VGswX3ZkWW5OOVpyVGN6N0hobmd5SERKN0lZUkNEYWhtMWpGU2Fwc3V4cjJxNEpzNTJGZkFDT1BtTnlpak1xeEY3VUJzWGVkak8yRWNNajJuaDZRcmVQaTRQU2ZjbnRQZ1JseWVfbXI5dlluLXlWeFpZTVpNM2xadm5rZVR4bTIzN1JWaVJkTjJWaFNOVGxtaENiT1JsVjJQbEpXX0VYMzg1V0pIdHllVGVZMGVYT1JB?oc=5"
+    ],
+    "static_urls": [
+      "https://www.sparkasse.de/",
+      "https://www.immobilienscout24.de/",
+      "https://www.stepstone.de/",
+      "https://www.dwd.de/",
+      "https://www.amazon.de/",
+      "https://www.obi.de/",
+      "https://www.rewe.de/",
+      "https://www.arbeitsagentur.de/",
+      "https://www.bundesregierung.de/",
+      "https://www.edeka.de/"
+    ]
+  }
+}

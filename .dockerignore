@@ -1,0 +1,7 @@
+.git
+runtime
+work
+outputs
+**/__pycache__
+.env
+*.sqlite3*
