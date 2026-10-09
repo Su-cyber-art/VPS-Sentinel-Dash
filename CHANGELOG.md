@@ -1,5 +1,11 @@
 # Changelog
 
+## VPS-Sentinel-Dash v0.2.0 — 2026-10-10
+
+首个正式网页面板版本，采用独立 Vue 3 + TypeScript 前端、FastAPI 后端与 Agent。提供交互式 systemd 安装、HTTP 部署、随机初始密码与首次强制改密，以及网页哨兵任务、取消、批量操作、定时策略和日志。通过 GitHub Actions 执行 API、浏览器及 Ubuntu 22.04/24.04 原生安装验收后生成固定版本安装器、完整源码/前端构建包和 SHA-256 校验文件。
+
+以下为保留的上游 IP-Sentinel 历史。
+
 ## [v4.3.4] - 2026-08-26
 
 ### ✨ Features

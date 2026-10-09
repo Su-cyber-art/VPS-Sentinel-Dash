@@ -17,7 +17,7 @@
 ## 交互式安装
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Su-cyber-art/VPS-Sentinel-Dash/main/install.sh -o sentinel-install.sh
+curl -fsSL https://github.com/Su-cyber-art/VPS-Sentinel-Dash/releases/latest/download/install.sh -o sentinel-install.sh
 sudo bash sentinel-install.sh
 ```
 
@@ -55,7 +55,7 @@ sudo bash sentinel-install.sh --role agent --yes \
 
 接入令牌文件需要由操作者保护和清理；安装器会生成一个临时副本，注册后删除副本。交互模式直接读取令牌，不将其加入命令行。`--modules no` 可只安装基础 Agent，默认安装完整哨兵模块。
 
-可以使用 `--prefix` 设置独立安装目录，升级/重置/卸载时必须使用同一路径。主控源码默认从 GitHub main 下载；`--ref` 指定版本或分支，`--source /path/to/repo` 使用本地源码。每次升级构建到独立 release 目录，通过 `current` 链接切换；新版本健康检查失败时恢复上一版程序。旧 release 保留以便回退，可在确认后自行清理。
+可以使用 `--prefix` 设置独立安装目录，升级/重置/卸载时必须使用同一路径。Release 安装器默认从对应的 GitHub 版本标签下载源码；仓库源码内的安装器默认跟随 main。`--ref` 可指定版本或分支，`--source /path/to/repo` 使用本地源码。每次升级构建到独立 release 目录，通过 `current` 链接切换；新版本健康检查失败时恢复上一版程序。旧 release 保留以便回退，可在确认后自行清理。
 
 自动安装依赖支持 Debian/Ubuntu APT。其他 systemd Linux 需要先安装 Python 3.10+、venv/pip、curl、tar、xz；完整 Agent 还需要 Bash、jq、flock、iproute2 和 GNU coreutils。Node.js 不满足版本要求时，安装器会下载 Node 22.23.3 的官方 x64/arm64 构建并校验 SHA-256。
 
@@ -88,6 +88,8 @@ SENTINEL_COOKIE_SECURE=true
 需要独立部署前端资产时，运行 `npm ci && npm run build`，将 `frontend/dist/` 放入自己的静态服务器，并为 Vue Router 配置 SPA 回退，同时把 `/api/` 与 `/downloads/` 代理到后端。Vite 开发环境默认代理后端，地址可用 `SENTINEL_API_URL` 修改。直接跨源访问 API 可通过前端 `VITE_API_BASE` 与后端 `SENTINEL_CORS_ORIGINS` 设置明确的来源；认证使用 Cookie，建议前后端置于同一站点。
 
 ## 服务、更新与密码恢复
+
+升级前先重新下载上方最新 Release 的安装器，再执行升级命令。
 
 ```bash
 sudo systemctl status vps-sentinel-api vps-sentinel-web
